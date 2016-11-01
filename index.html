@@ -4,6 +4,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>My Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/yeti/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700">
@@ -16,15 +23,32 @@
 </head>
 
 <body>
-    <div></div>
     <nav class="navbar navbar-default">
         <div class="container-fluid">
-            <div class="navbar-header"><a class="navbar-brand navbar-link" href="#">Alyson's Project's Portfolio Sample</a>
-                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            <div class="navbar-header">
+                
+                <!-- The brand name. Main title of the web site. -->
+                <a class="navbar-brand navbar-link" href="#">Alyson's Project's Portfolio Sample</a>
+            
+                <!-- This button is used for the narrow width.
+                     If you would add <span class>...  The icon would change -->
+                <!-- The location of the icon is targetted on data-target.
+                     In this case, #navico-1 is the target.-->
+                <button 
+                    class="navbar-toggle collapsed" 
+                    data-toggle="collapse" 
+                    data-target="#navcol-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
             </div>
+            
             <div class="collapse navbar-collapse" id="navcol-1">
+                <!-- Locates right side -->
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active" role="presentation"><a href="#">About </a></li>
+                    <li role="presentation"><a href="#">About </a></li>
                     <li role="presentation"><a href="#">Blog </a></li>
                     <li role="presentation"><a href="#">Contact </a></li>
                     <li role="presentation"><a href="#">Projects </a></li>
